@@ -1,0 +1,37 @@
+How Http Work: 
+- When you enter http:// in address bar, it tells browser to connect over Http.
+- Http uses TCP generally over port 80 to send & receive data packets over the web
+
+How Https Works: 
+- Http over TLS or HTTP over SSL
+- When you enter https://, it tells browser to connect over HTTPS. Generally sites running on https will have a redirect in place so even if you place http, it'll redirect to deliver over HTTPS
+- Https also used TCP to send/receive data, but it does so over port 443, within a connection encrypted by TLS (Transport Layer Security)
+
+How Https is Secure: 
+- Https originally used SSL protocol, which eventually evolved into TLS
+- Https transmit its data securely using an encrypted connection.
+- Basically it uses a public key, which is then decrypted on the recipient side. The public key is deployed on the server, and included in what you know as an SSL certificate. The certificates are cryptographically signed by a Certified authority, and each browser has a list of CAs it implicitly trust. 
+Any certificate signed by a CA in trusted list is given a green padlock in browsers address bar. 
+- Companies like 'let's encrypt' have process of issuing SSL certificates free. 
+
+Problems with Http: 
+- Session Hijacking
+- Man-in-the-middle attackHow Http Work: 
+- When you enter http:// in address bar, it tells browser to connect over Http.
+- Http uses TCP generally over port 80 to send & receive data packets over the web
+
+How Https Works: 
+- Http over TLS or HTTP over SSL
+- When you enter https://, it tells browser to connect over HTTPS. Generally sites running on https will have a redirect in place so even if you place http, it'll redirect to deliver over HTTPS
+- Https also used TCP to send/receive data, but it does so over port 443, within a connection encrypted by TLS (Transport Layer Security)
+
+How Https is Secure: 
+- Https originally used SSL protocol, which eventually evolved into TLS
+- Https transmit its data securely using an encrypted connection.
+- Basically it uses a public key, which is then decrypted on the recipient side. The public key is deployed on the server, and included in what you know as an SSL certificate. The certificates are cryptographically signed by a Certified authority, and each browser has a list of CAs it implicitly trust. 
+Any certificate signed by a CA in trusted list is given a green padlock in browsers address bar. 
+- Companies like 'let's encrypt' have process of issuing SSL certificates free. 
+
+Problems with Http: 
+- Session Hijacking
+- Man-in-the-middle attack

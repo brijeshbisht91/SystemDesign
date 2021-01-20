@@ -1,0 +1,37 @@
+Load Balancing:
+ - It helps to distribute load across multiple resources. 
+ - It also keep track of status of all the resources while distributing requests. If a server is not available, it stops sending traffic. 
+ - LB can be added at three places:
+  - Between user & web-server
+  - Between web-servers & internal servers (Application servers or cache servers)
+  - Between Internal platform layer & DB
+ - Types of load balancers: 
+  - Smart Clients
+   - It'll take a pool of service hosts & balances load, manage them (Detect recovered host, deal with adding new hosts, etc)
+  - Hardware LB: 
+   - They are hardware which works as LB, but are very expensive. 
+   - Even big companies use them only as first point of contact & use other machanism for load-balancing.
+  - Software Load balancers:
+   - It's hybrid approach. HAProxy is popular open source software LB.
+   - Every client request on this port (where HAProxy is running) will be received by proxy & then passed to the backend service in efficient way. 
+   - HAProxy manages health check & will remove or add machines to those pools.
+   - We should start with these.
+ - Ways of load balancing:
+  - Round robin
+  - Round robin with weighted server
+
+In this video, we're going to reveal Load balancers used in System Design:
+- What is Load balancer
+- Where Load balancer can be added
+- Types of load balancer
+- Algorithms to implement Load Balancing
+
+This problem is similar to following: 
+what is load balancer and how it works, 
+load balancer, 
+load balancer tutorial, 
+load balancer wiki, 
+load balancer definition, 
+load balancer software, 
+HAProxy load balancer configuration,
+load balancer nginx

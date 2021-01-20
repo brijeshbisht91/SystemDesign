@@ -1,0 +1,23 @@
+SQL vs NoSQL:
+ - SQL: It stores data in row & columns
+  - MySQL, Oracle, SQLite
+  - Each record has fixed schema, columns must be decides before data entry, can be altered but involves modifying whole database & going offline
+  - It uses SQL Query
+  - SQL are vertically scalable i.e. by increasing the higher memory, CPU of hardware, which can be very expensive
+  - Most of SQLs are ACID compliant (Atomity, Consistency, Isolation, Durability) 
+  - When you want to ensure ACID compliance & your data is structured & unchanging.
+  
+ - NoSQL: Common types
+  - Key-Value stores: Redis, Voldemart, Dynamo
+  - Document databases: MongoDB, CouchDB
+  - Wide-Column database: Column families
+   - Best suited for analyzing large dataset
+   - Cassendra, HBase
+  - Graph Database: Data is saved in graph structure with nodes(entities), properties & lines(Connection)
+   - Neo4J, InfiniteGraph
+  - Here schemas are dynamic, Coulmns can be added on the fly & each row doesn't have to be contain each columns
+  - Here queries are focused on a collection of documets. It's also known as UNQL (Unstructured Query language)
+  - These are horizontally scalable meaning we can add more servers easily. Lot of servers are distributed data servers also.
+  - Most of NoSQL sacrifice ACID compliance for performance & scalibility.
+  - When storing large volume of data with rapid development with no structure fixed.
+  - Cloud based computing & storage. They are designed to be scaled across multiple data servers  

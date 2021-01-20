@@ -1,0 +1,9 @@
+System Design - Messaging Queue | Message Queue | Kafka
+
+Queue:
+ - Generally you send one request & you get response, but when you send so many requests in big servers, it's very important to have processing queue,
+  where you send request & 
+ they all go in processing queue & it solve one by one.
+  - Queue are based on asynchronous communication protocol
+  - Queues are also used as fault tolerance; In case of any sevice outage, they can retry the requests.
+  - Examples: RabbitMQ, ZeroMQ, ActiveMQ, 	 BeanstalkD

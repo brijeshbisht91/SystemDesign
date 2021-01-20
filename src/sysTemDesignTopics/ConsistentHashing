@@ -1,0 +1,6 @@
+
+Consistent Hashing:
+ - If you have 'K mod n' way hashing, adding a new server can have all hashing need to do from starting
+ - But in consitent hashing we need to map only k/n again, where k = number of keys & n is cache servers
+ - Whenever you add new cache server, it'll fetch some of existing servers keys, which lie inside it.
+ - When you remove any nodes, next node handles all it's keys, so we need to map only deleted node's key.
